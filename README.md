@@ -29,9 +29,16 @@ Tests cover time conversion, countdown boundaries, UTF-8 calendar format and mob
 
 ## Hosting
 
-Public Site URL: https://openway-graduation-2026-bao-duy.light-crab-5451.chatgpt.site/
+Import `rokiehuynh2201/bao3` into Vercel and deploy from the repository root:
 
-Serve the `dist/` directory on a static host. All fonts, artwork and download files are local. The `.openai/hosting.json` file binds this checkout to its Sites project. Social metadata in `dist/index.html` should be updated if deploying to a different domain.
+- Framework Preset: **Other**.
+- Output Directory: **dist**.
+- Build Command and Install Command: **empty**, as configured in `vercel.json`.
+- Suggested project name: **gradution-openway-2026**, if available.
+
+The static website is already in `dist/`; no compilation or production dependencies are required. All fonts, artwork and download files are local. Use the production URL Vercel returns after deployment. To let guests open the invitation, keep the production website publicly accessible.
+
+The old hosting URLs were removed from the page metadata. After deployment, optional `canonical`, `og:url` and absolute `og:image` tags can be added using the actual production URL.
 
 ## Assets
 
