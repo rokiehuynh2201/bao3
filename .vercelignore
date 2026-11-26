@@ -1,0 +1,10 @@
+.git
+.openai
+.sites-local
+node_modules
+docs
+tests
+scripts
+README.md
+*.zip
+*.tar.gz
