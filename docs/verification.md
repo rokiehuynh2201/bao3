@@ -25,3 +25,11 @@
 - Publish the current source to the existing Sites project and then change its audience to public.
 - Canonical and Open Graph URLs now point to the free chatgpt.site hostname.
 - The pending custom-domain setup was removed because the user does not own bkuopenway.com.
+
+## 2026-11-26 Vercel social preview and time correction
+
+- Confirmed the production page and group photo return HTTP 200 without authentication, including the Facebook crawler user agent. The production page was missing og:image.
+- Restored canonical and Open Graph URLs using the confirmed Vercel production domain. Added image MIME type, actual dimensions, alternate text and Twitter large-image metadata.
+- Changed website event information and share descriptions to 14:30–15:00 on 28 November 2026 (Vietnam time). Countdown targets 14:30; the calendar utility uses 07:30–08:00 UTC.
+- Existing countdown and calendar tests were updated first: three failed against the old time before the implementation changed.
+- Original downloadable invitation artwork is retained as an archive; the social preview uses the current group photograph rather than artwork containing the previous printed time.

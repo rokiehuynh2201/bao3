@@ -34,7 +34,7 @@ test('mobile menu opens, closes on navigation and supports Escape', t => {
 });
 
 test('countdown initializes from one clock read so the event boundary cannot stop updates early', t => {
-  const start = Date.parse('2026-11-28T06:30:00Z');
+  const start = Date.parse('2026-11-28T07:30:00Z');
   const { dom, w, $ } = setup({ nowSequence: [start - 1, start] }); t.after(() => dom.window.close());
   assert.equal(w.clockReads(), 1);
   assert.equal($('[data-count="seconds"]').textContent, '01');

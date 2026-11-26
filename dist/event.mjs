@@ -1,4 +1,4 @@
-export const EVENT_START = Date.parse('2026-11-28T13:30:00+07:00');
+export const EVENT_START = Date.parse('2026-11-28T14:30:00+07:00');
 export const EVENT_LOCATION = 'Trường Đại học Bách khoa – ĐHQG TP.HCM, 268 Lý Thường Kiệt, TP.HCM';
 
 export function getCountdown(now = Date.now()) {
@@ -35,12 +35,12 @@ function foldLine(line) {
 }
 
 export function createCalendarEvent() {
-  const description = 'Lời mời tốt nghiệp của Huỳnh Gia Bảo, Đinh Lê Phúc Duy và Nguyễn Anh Duy gửi đại gia đình OpenWay Việt Nam. Hẹn anh chị lúc 13:30 tại cơ sở Lý Thường Kiệt để chung vui và lưu giữ khoảnh khắc ý nghĩa này.';
+  const description = 'Lời mời tốt nghiệp của Huỳnh Gia Bảo, Đinh Lê Phúc Duy và Nguyễn Anh Duy gửi đại gia đình OpenWay Việt Nam. Hẹn anh chị từ 14:30 đến 15:00 tại cơ sở Lý Thường Kiệt để chung vui và lưu giữ khoảnh khắc ý nghĩa này.';
   return [
     'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Graduation OpenWay//Invitation VI//EN',
     'CALSCALE:GREGORIAN', 'BEGIN:VEVENT',
     'UID:graduation-20261128-bao-phucduy-anhduy@openway-graduation',
-    'DTSTAMP:20261126T000000Z', 'DTSTART:20261128T063000Z',
+    'DTSTAMP:20261126T000000Z', 'DTSTART:20261128T073000Z', 'DTEND:20261128T080000Z',
     `SUMMARY:${escapeText('Một cột mốc – Ngàn lời tri ân | Lễ tốt nghiệp')}`,
     `DESCRIPTION:${escapeText(description)}`,
     `LOCATION:${escapeText(EVENT_LOCATION)}`,

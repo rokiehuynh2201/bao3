@@ -2,7 +2,7 @@
 
 A complete Vietnamese graduation invitation website for Huỳnh Gia Bảo, Đinh Lê Phúc Duy and Nguyễn Anh Duy, dedicated to OpenWay Việt Nam.
 
-- Event: **13:30, Saturday 28 November 2026 (UTC+7)**.
+- Event: **14:30–15:00, Saturday 28 November 2026 (UTC+7)**.
 - Venue: **Trường Đại học Bách khoa – ĐHQG TP.HCM, cơ sở Lý Thường Kiệt, 268 Lý Thường Kiệt, TP.HCM**.
 - Responsive layout, local Vietnamese fonts, reduced-motion support and keyboard navigation.
 - Live countdown, Google Maps link and an OpenWay photo gallery. The group photo loads eagerly without a fade-in effect.
@@ -38,7 +38,11 @@ Import `rokiehuynh2201/bao3` into Vercel and deploy from the repository root:
 
 The static website is already in `dist/`; no compilation or production dependencies are required. All fonts, artwork and download files are local. Use the production URL Vercel returns after deployment. To let guests open the invitation, keep the production website publicly accessible.
 
-The old hosting URLs were removed from the page metadata. After deployment, optional `canonical`, `og:url` and absolute `og:image` tags can be added using the actual production URL.
+Production website: https://graduation-openway-baoduyduy-2026.vercel.app/
+
+Canonical, Open Graph and Twitter metadata use the production URL. Social previews use the existing 2566 x 1924 OpenWay group photo, which contains no outdated printed event time. The event is 14:30–15:00 Vietnam time; the countdown targets 14:30. The calendar utility carries the confirmed 30-minute interval.
+
+After a metadata change, Facebook can refresh its cache through https://developers.facebook.com/tools/debug/ (Scrape Again). Chat applications may retain previews for links already sent; test a newly sent link after the production deployment is ready.
 
 ## Assets
 
